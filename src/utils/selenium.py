@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.append(os.getcwd())  # NOQA
+sys.path.append(os.getcwd()) # NOQA
 
 import zipfile
 from selenium.webdriver.chrome.options import Options
@@ -73,8 +73,8 @@ class ChromeDriver():
             - headless: bool
             - download_path: str
             - authenticate_proxy: dict
-            - id: int (For distinguish urls)
-
+            - disable_js: bool
+            - disable_images: bool
             ```python
             {
                 'host': Any,
@@ -91,13 +91,12 @@ class ChromeDriver():
 
         self.download_path = kwargs.get('download_path', None)
         self.authenticate_proxy = kwargs.get('authenticate_proxy', None)
-        self.id = kwargs.get('id', None)
 
         # Initiate the driver
         webdriver_service = Service(ChromeDriverManager().install())
 
         chrome_options = Options()
-        chrome_options.add_argument("--window-size=400,400")
+        chrome_options.add_argument("--window-size=1920,1080")
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument('--ignore-ssl-errors')
@@ -121,8 +120,8 @@ class ChromeDriver():
             username = self.authenticate_proxy['username']
             password = self.authenticate_proxy['password']
 
-            pluginfile_name = f'proxy_auth_plugin{self.id}.zip'
-            pluginfile_path = os.path.join(os.getcwd(), 'config', pluginfile_name)
+            pluginfile_name = 'proxy_auth_plugin.zip'
+            pluginfile_path = os.path.join(os.getcwd(), 'src', 'utils', pluginfile_name)
 
             with zipfile.ZipFile(pluginfile_path, 'w') as zp:
                 zp.writestr("manifest.json", manifest_json)
@@ -132,3 +131,6 @@ class ChromeDriver():
 
         # Get the driver
         self.driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
+
+        # Set the timeout
+        self.driver.set_page_load_timeout(120)
