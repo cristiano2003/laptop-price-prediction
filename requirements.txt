@@ -1,0 +1,6 @@
+scrapy
+beautifulsoup4
+requests
+pymongo
+selenium
+webdriver-manager
