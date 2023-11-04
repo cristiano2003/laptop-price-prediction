@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.append(os.getcwd()) # NOQA
+sys.path.append(os.getcwd())  # NOQA
 
 import zipfile
 from selenium.webdriver.chrome.options import Options
@@ -96,7 +96,7 @@ class ChromeDriver():
         webdriver_service = Service(ChromeDriverManager().install())
 
         chrome_options = Options()
-        chrome_options.add_argument("--window-size=1920,1080")
+        chrome_options.add_argument("--window-size=400,400")
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument('--ignore-ssl-errors')
