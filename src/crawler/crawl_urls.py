@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 
-urls = [f'https://www.newegg.com/Laptops-Notebooks/SubCategory/ID-32/Page-{i}' for i in range(1, 101)]
+urls = [f'https://www.newegg.com/Laptops-Notebooks/SubCategory/ID-32/Page-{i}' for i in range(1, 10)]
 proxy_path = os.path.join(os.getcwd(), 'assets', 'proxies.txt')
 
 headers = {
@@ -89,9 +89,9 @@ def fetch_url(url: str, proxy: tuple = None) -> dict:
     while number_of_tried <= 5:
         try:
             number_of_tried += 1
-            driver.set_page_load_timeout(5)
+            driver.set_page_load_timeout(20)
 
-            sout(f'Fetching the url "{url}" {number_of_tried + 1} time(s)')
+            sout(f'Fetching the url "{url}" {number_of_tried} time(s)')
             driver.get(url)
             break
         except TimeoutException:
@@ -123,6 +123,8 @@ def run(max_worker: int = 5):
     output_urls: list = []
 
     # ---------------------------------------------Reading Proxies---------------------------------------------
+    sout('Reading proxies ...', 'yellow')
+
     with open(proxy_path, 'r') as f:
         proxies: list = list(map(lambda x: x.strip(), f.readlines()))
 
@@ -134,6 +136,7 @@ def run(max_worker: int = 5):
     with ThreadPoolExecutor(max_workers=max_worker) as executor:
         futures = {}
 
+        sout('Submitting urls to executor ...', 'yellow')
         for idx, url in enumerate(urls):
             if current_proxy_idx == len(proxies):
                 current_proxy_idx = 0  # Reset the index of current proxy
@@ -142,12 +145,13 @@ def run(max_worker: int = 5):
 
             futures[future] = url
 
+        sout('Waiting for the results ...', 'yellow')
         for idx, future in enumerate(as_completed(list(futures.keys()))):
             result = future.result()
 
             if result['status'] == 'success':
                 sout(f'Get detail urls from "{futures[future]}" successfully', 'green')
-                sout(f'Number of urls: {len(result["data"])}', 'blue')
+                sout(f'Number of urls: {len(result["data"])}', 'green')
                 output_urls.extend(result['data'])
 
         sout('Done', 'green')
