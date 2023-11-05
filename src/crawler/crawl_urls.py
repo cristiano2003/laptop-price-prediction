@@ -1,3 +1,4 @@
+import json
 import requests
 import os
 import sys
@@ -32,6 +33,25 @@ headers = {
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
 }
+
+
+def parse_url(page_source: str) -> list:
+    output_hrefs: list = []
+
+    soup = bs(page_source, 'html.parser')
+
+    body = soup.find(
+        'div', {'class': 'item-cells-wrap border-cells short-video-box items-grid-view four-cells expulsion-one-cell'})
+
+    items = body.find_all('div', {'class': 'item-container'})
+
+    for item in items:
+        a_tag = item.find('a')
+        href = a_tag.get('href', None)
+        if href:
+            output_hrefs.append(href)
+
+    return output_hrefs
 
 
 def fetch_url(url: str, proxy: tuple = None) -> dict:
@@ -89,32 +109,14 @@ def fetch_url(url: str, proxy: tuple = None) -> dict:
             }
         }
 
+    # -----------------------------------------------Parse the html to get urls-----------------------------------------------
+    urls: list = parse_url(driver.page_source)
+
     return {
         'status': 'success',
         'message': f'Fetching url "{url}" successfully',
-        'data': driver.page_source
+        'data': urls
     }
-
-
-def parse_url(page_source: str) -> list:
-    output_hrefs: list = []
-
-    soup = bs(page_source, 'html.parser')
-
-    body = soup.find(
-        'div', {'class': 'item-cells-wrap border-cells short-video-box items-grid-view four-cells expulsion-one-cell'})
-
-    items = body.find_all('div', {'class': 'item-container'})
-
-    for item in items:
-        a_tag = item.find('a')
-        href = a_tag.get('href', None)
-        if href:
-            output_hrefs.append(href)
-
-    print(len(output_hrefs))
-
-    return output_hrefs
 
 
 def run(max_worker: int = 5):
@@ -130,39 +132,31 @@ def run(max_worker: int = 5):
 
     # -----------------------------------------------Crawl Urls-----------------------------------------------
     with ThreadPoolExecutor(max_workers=max_worker) as executor:
-        # Initial call to print 0% progress (Submit future)
-        printProgressBar(0, len(urls), prefix='Process:', suffix='completed', length=50)
-
         futures = {}
 
         for idx, url in enumerate(urls):
-
             if current_proxy_idx == len(proxies):
                 current_proxy_idx = 0  # Reset the index of current proxy
-
-            printProgressBar(idx + 1, len(urls), prefix='Process:', suffix='completed', length=50)
 
             future = executor.submit(fetch_url, url=url, proxy=proxies[current_proxy_idx])
 
             futures[future] = url
 
-        # Initial call to print 0% progress (Get result from future)
-        printProgressBar(0, len(urls), prefix='Process:', suffix='completed', length=50)
-
         for idx, future in enumerate(as_completed(list(futures.keys()))):
-            printProgressBar(idx + 1, len(urls), prefix='Process:', suffix='completed', length=50)
-
             result = future.result()
 
             if result['status'] == 'success':
-                sout(f'Get detail urls from "{futures[future]}" successfully')
+                sout(f'Get detail urls from "{futures[future]}" successfully', 'green')
+                sout(f'Number of urls: {len(result["data"])}', 'blue')
                 output_urls.extend(result['data'])
 
         sout('Done', 'green')
 
         # TODO: Store the output_urls in src/crawler/data as output_urls.json
 
+        with open(os.path.join(os.getcwd(), 'src', 'crawler', 'data', 'output_urls.json'), 'w') as f:
+            f.write(json.dumps(output_urls, indent=4))
+
 
 if __name__ == '__main__':
-    # run(max_worker=5)
-
+    run(max_worker=5)
