@@ -120,7 +120,7 @@ class LaptopSpecParse():
                         for r in regex:
                             match = re.search(r, battery.lower())
                             if match:
-                                data['battery'] = match.group(1) + ' Whrs'
+                                data['battery'] = match.group(1) + ' whrs'
 
                                 break
                     else:
