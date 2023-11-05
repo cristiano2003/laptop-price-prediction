@@ -75,6 +75,8 @@ class ChromeDriver():
             - authenticate_proxy: dict
             - disable_js: bool
             - disable_images: bool
+            - proxy_index: int
+
             ```python
             {
                 'host': Any,
@@ -88,6 +90,7 @@ class ChromeDriver():
         self.headless = headless
         self.disable_js = kwargs.get('disable_js', False)
         self.disable_images = kwargs.get('disable_images', False)
+        self.proxy_index = kwargs.get('proxy_index', None)
 
         self.download_path = kwargs.get('download_path', None)
         self.authenticate_proxy = kwargs.get('authenticate_proxy', None)
@@ -120,8 +123,8 @@ class ChromeDriver():
             username = self.authenticate_proxy['username']
             password = self.authenticate_proxy['password']
 
-            pluginfile_name = 'proxy_auth_plugin.zip'
-            pluginfile_path = os.path.join(os.getcwd(), 'src', 'utils', pluginfile_name)
+            pluginfile_name = f'proxy_auth_plugin_{self.proxy_index}.zip'
+            pluginfile_path = os.path.join(os.getcwd(), 'src', 'utils', 'extensions', pluginfile_name)
 
             with zipfile.ZipFile(pluginfile_path, 'w') as zp:
                 zp.writestr("manifest.json", manifest_json)

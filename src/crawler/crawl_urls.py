@@ -54,7 +54,7 @@ def parse_url(page_source: str) -> list:
     return output_hrefs
 
 
-def fetch_url(url: str, proxy: tuple = None) -> dict:
+def fetch_url(url: str, proxy: tuple = None, proxy_idx: int = None) -> dict:
     """
         This method used to fetch the html of each page from newegg product catagories, there are 
         100 pages in total. Using proxies is required to avoid CAPTCHA.
@@ -84,7 +84,8 @@ def fetch_url(url: str, proxy: tuple = None) -> dict:
 
     number_of_tried = 0
 
-    driver = ChromeDriver(headless=False, authenticate_proxy=proxy_config, disable_images=True).driver
+    driver = ChromeDriver(headless=False, authenticate_proxy=proxy_config,
+                          disable_images=True, proxy_index=proxy_idx).driver
 
     while number_of_tried <= 5:
         try:
@@ -141,7 +142,7 @@ def run(max_worker: int = 5):
             if current_proxy_idx == len(proxies):
                 current_proxy_idx = 0  # Reset the index of current proxy
 
-            future = executor.submit(fetch_url, url=url, proxy=proxies[current_proxy_idx])
+            future = executor.submit(fetch_url, url=url, proxy=proxies[current_proxy_idx], proxy_idx=current_proxy_idx)
 
             futures[future] = url
 
