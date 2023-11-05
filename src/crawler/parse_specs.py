@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import time
 import sys
 sys.path.append(os.getcwd())  # NOQA
 
@@ -12,6 +13,8 @@ from dev_tools_supporter import sout
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from src.utils.proxy import check_proxy
 
+from src.utils.database.mongodb import MongoDB
+
 
 class LaptopSpecParse():
 
@@ -21,12 +24,15 @@ class LaptopSpecParse():
     def __init__(self, urls: list) -> None:
         self.urls = urls
         self.current_html_idx = 0
+        self.db = MongoDB(cluster='newegg')
 
-    def __process_text(self, text: str):
+    def __process_text(self, text: str, battery: bool = False):
         # Strip
         text = text.strip()
 
-        unexpected_chars = ['\n', '\t', '\r', '\"', '.']
+        unexpected_chars = ['\n', '\t', '\r', '\"']
+
+        unexpected_chars += '.' if not battery else []
 
         for c in unexpected_chars:
             text = text.replace(c, '')
@@ -271,8 +277,16 @@ class LaptopSpecParse():
 
                 if result['status'] == 'success':
                     sout(f'Get detail urls from "{futures[future]}" successfully', 'green')
-                    sout(f'Number of features: {len(result["data"])}', 'green')
-                    specs.append(result['data'])
+
+                    number_of_features = len(result['data'])
+
+                    sout(f'Number of features: {number_of_features}', 'green')
+
+                    if number_of_features == 13:
+                        specs.append(result['data'])
+                        self.db.update_collection('laptops', result['data'])
+                        sout('Updated to database successfully', 'green')
+
                 else:
                     sout(str(result), 'red')
 
@@ -286,20 +300,22 @@ class LaptopSpecParse():
 
             print(specs)
 
-            with open(os.path.join(data_folder, 'specs_1.json'), 'w', encoding='utf8') as f:
-                f.write(json.dumps(specs, indent=4, ensure_ascii=True))
-
 
 if __name__ == '__main__':
     # Get the urls from the output_urls.json
-    with open(os.path.join(os.getcwd(), 'src', 'crawler', 'data', 'detail_urls', 'output_urls_1.json'), 'r') as f:
-        urls = json.loads(f.read())
+    urls = []
 
-    parser = LaptopSpecParse(urls=urls[:20])
-    parser.run(max_worker=5)
+    for i in range(1, 4):
+        with open(os.path.join(os.getcwd(), 'src', 'crawler', 'data', 'detail_urls', f'output_urls_{i}.json'), 'r') as f:
+            urls.extend(json.loads(f.read()))
 
-    # print(parser.fetch_url(
-    #     url='https://www.newegg.com/classic-black-msi-modern-14-c7m-049us-work-business/p/N82E16834156445',
-    #     proxy=('200.10.37.251', '12345', 'ebay2023', 'proxyebaylam'),
-    #     proxy_idx=0
-    # ))
+    # Divide the urls into pars, each part has 100 urls
+    urls = [urls[i:i + 100] for i in range(0, len(urls), 100)]
+
+    for url in urls:
+        parser = LaptopSpecParse(urls=url)
+        parser.run(max_worker=5)
+
+        # Sleep 10 minutes
+        sout('Sleeping 10 minutes ...', 'red')
+        time.sleep(600)

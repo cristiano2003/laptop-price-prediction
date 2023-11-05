@@ -35,18 +35,4 @@ if __name__ == '__main__':
 
     collection = cluster.get_db()['laptops']
 
-    # Create unique index
-    collection.create_index('brand', unique=True)
-    collection.create_index('cpu', unique=True)
-    collection.create_index('screen_size', unique=True)
-    collection.create_index('screen_resolution', unique=True)
-    collection.create_index('memory', unique=True)
-    collection.create_index('storage', unique=True)
-    collection.create_index('graphic_type', unique=True)
-    collection.create_index('graphic_name', unique=True)
-    collection.create_index('weight', unique=True)
-    collection.create_index('battery', unique=True)
-    collection.create_index('refresh_rate', unique=True)
-    collection.create_index('price', unique=True)
-
     print('Done')
