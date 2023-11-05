@@ -90,7 +90,7 @@ def parse_html(html):
                 for r in regex:
                     match = re.search(r, battery)
                     if match:
-                        data['battery'] = match.group(1)
+                        data['battery'] = match.group(1) + ' Wh'
                         print('battery: ', data['battery'])
                         break
             else:
