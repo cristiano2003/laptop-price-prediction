@@ -157,13 +157,17 @@ def run(max_worker: int = 5):
         sout('Submitting urls to executor ...', 'yellow')
 
         for idx, url in enumerate(urls):
-            if current_proxy_idx == len(proxies):
-                current_proxy_idx = 0
 
             # Check whether the current proxy is working or not
-            while not check_proxy(proxies[current_proxy_idx]):
-                sout(f'Proxy {proxies[current_proxy_idx]} is not working. Skipping ...', 'red')
-                current_proxy_idx += 1
+            while True:
+                if current_proxy_idx == len(proxies):
+                    current_proxy_idx = 0
+
+                if check_proxy(proxies[current_proxy_idx]):
+                    break
+                else:
+                    sout(f'Proxy {proxies[current_proxy_idx]} is not working. Skipping ...', 'red')
+                    current_proxy_idx += 1
 
             sout(f'Using proxy {proxies[current_proxy_idx]} to fetch url "{url}"', 'green')
 
