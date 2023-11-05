@@ -4,4 +4,4 @@ requests
 pymongo
 selenium
 webdriver-manager
-
+dev_tools_supporter
