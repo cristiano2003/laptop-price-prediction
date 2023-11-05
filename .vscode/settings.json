@@ -1,0 +1,11 @@
+{
+  "autopep8.args": ["--max-line-length", "120"],
+  "files.exclude": {
+    ".venv": true,
+    "**/__pycache__": true
+  },
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  }
+}
