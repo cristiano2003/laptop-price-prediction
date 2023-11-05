@@ -7,6 +7,7 @@ sys.path.append(os.getcwd())  # NOQA
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dev_tools_supporter import printProgressBar, sout
 from bs4 import BeautifulSoup as bs
+from src.utils.proxy import check_proxy
 
 from src.utils.selenium import ChromeDriver
 from selenium.common.exceptions import TimeoutException
@@ -35,23 +36,34 @@ headers = {
 }
 
 
-def parse_url(page_source: str) -> list:
-    output_hrefs: list = []
+def parse_url(page_source: str) -> dict:
+    try:
+        output_hrefs: list = []
 
-    soup = bs(page_source, 'html.parser')
+        soup = bs(page_source, 'html.parser')
 
-    body = soup.find(
-        'div', {'class': 'item-cells-wrap border-cells short-video-box items-grid-view four-cells expulsion-one-cell'})
+        body = soup.find(
+            'div', {'class': 'item-cells-wrap border-cells short-video-box items-grid-view four-cells expulsion-one-cell'})
 
-    items = body.find_all('div', {'class': 'item-container'})
+        items = body.find_all('div', {'class': 'item-container'})
 
-    for item in items:
-        a_tag = item.find('a')
-        href = a_tag.get('href', None)
-        if href:
-            output_hrefs.append(href)
+        for item in items:
+            a_tag = item.find('a')
+            href = a_tag.get('href', None)
+            if href:
+                output_hrefs.append(href)
 
-    return output_hrefs
+        return {
+            'status': 'success',
+            'message': 'Parse url successfully',
+            'data': output_hrefs
+        }
+    except Exception as e:
+        return {
+            'status': 'error',
+            'message': f'Parse url unsuccessfully: {e}',
+            'data': None
+        }
 
 
 def fetch_url(url: str, proxy: tuple = None, proxy_idx: int = None) -> dict:
@@ -111,7 +123,12 @@ def fetch_url(url: str, proxy: tuple = None, proxy_idx: int = None) -> dict:
         }
 
     # -----------------------------------------------Parse the html to get urls-----------------------------------------------
-    urls: list = parse_url(driver.page_source)
+    response = parse_url(driver.page_source)
+
+    if response['status'] == 'error':
+        return response
+    else:
+        urls = response['data']
 
     return {
         'status': 'success',
@@ -138,7 +155,18 @@ def run(max_worker: int = 5):
         futures = {}
 
         sout('Submitting urls to executor ...', 'yellow')
+
         for idx, url in enumerate(urls):
+            if current_proxy_idx == len(proxies):
+                current_proxy_idx = 0
+
+            # Check whether the current proxy is working or not
+            while not check_proxy(proxies[current_proxy_idx]):
+                sout(f'Proxy {proxies[current_proxy_idx]} is not working. Skipping ...', 'red')
+                current_proxy_idx += 1
+
+            sout(f'Using proxy {proxies[current_proxy_idx]} to fetch url "{url}"', 'green')
+
             if current_proxy_idx == len(proxies):
                 current_proxy_idx = 0  # Reset the index of current proxy
 
