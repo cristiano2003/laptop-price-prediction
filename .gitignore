@@ -160,3 +160,7 @@ cython_debug/
 #.idea/
 
 assets/proxies.txt
+
+src/utils/extensions/*
+
+src/crawler/raw_htmls/*
