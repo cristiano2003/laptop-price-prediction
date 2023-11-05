@@ -159,7 +159,11 @@ def run(max_worker: int = 5):
 
         # TODO: Store the output_urls in src/crawler/data as output_urls.json
 
-        with open(os.path.join(os.getcwd(), 'src', 'crawler', 'data', 'output_urls.json'), 'w') as f:
+        data_folder = os.path.join(os.getcwd(), 'src', 'crawler', 'data')
+
+        os.makedirs(data_folder, exist_ok=True)
+
+        with open(os.path.join(data_folder 'output_urls.json'), 'w') as f:
             f.write(json.dumps(output_urls, indent=4))
 
 
