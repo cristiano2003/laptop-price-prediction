@@ -143,6 +143,7 @@ def run(max_worker: int = 5):
                 current_proxy_idx = 0  # Reset the index of current proxy
 
             future = executor.submit(fetch_url, url=url, proxy=proxies[current_proxy_idx], proxy_idx=current_proxy_idx)
+            current_proxy_idx += 1
 
             futures[future] = url
 
