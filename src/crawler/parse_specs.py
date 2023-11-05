@@ -314,8 +314,11 @@ if __name__ == '__main__':
 
     for url in urls:
         parser = LaptopSpecParse(urls=url)
-        parser.run(max_worker=5)
+        parser.run(max_worker=10)
 
         # Sleep 10 minutes
-        sout('Sleeping 10 minutes ...', 'red')
-        time.sleep(600)
+        sout('Sleeping 4 minutes ...', 'red')
+
+        for i in range(60 * 4):
+            print(f'Time remaining: {60 * 4 - i} seconds\r', end='')
+            time.sleep(1)
