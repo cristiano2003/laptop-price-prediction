@@ -35,34 +35,18 @@ if __name__ == '__main__':
 
     collection = cluster.get_db()['laptops']
 
-    # Creata schema
-    schema = {
-        'brand': 'string',
-        'cpu': 'string',
-        'screen_size': 'string',
-        'screen_resolution': 'string',
-        'memory': 'string',
-        'storage': 'string',
-        'graphic_type': 'string',
-        'graphic_name': 'string',
-        'weight': 'string',
-        'battery': 'string',
-        'refresh_rate': 'string',
-        'price': float,
-    }
+    # Create unique index
+    collection.create_index('brand', unique=True)
+    collection.create_index('cpu', unique=True)
+    collection.create_index('screen_size', unique=True)
+    collection.create_index('screen_resolution', unique=True)
+    collection.create_index('memory', unique=True)
+    collection.create_index('storage', unique=True)
+    collection.create_index('graphic_type', unique=True)
+    collection.create_index('graphic_name', unique=True)
+    collection.create_index('weight', unique=True)
+    collection.create_index('battery', unique=True)
+    collection.create_index('refresh_rate', unique=True)
+    collection.create_index('price', unique=True)
 
-    # Create index
-    collection.create_index('brand')
-    collection.create_index('cpu')
-    collection.create_index('screen_size')
-    collection.create_index('screen_resolution')
-    collection.create_index('memory')
-    collection.create_index('storage')
-    collection.create_index('graphic_type')
-    collection.create_index('graphic_name')
-    collection.create_index('weight')
-    collection.create_index('battery')
-    collection.create_index('refresh_rate')
-    collection.create_index('price')
-
-    # Update schema and create index
+    print('Done')
