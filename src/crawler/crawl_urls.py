@@ -163,7 +163,7 @@ def run(max_worker: int = 5):
 
         os.makedirs(data_folder, exist_ok=True)
 
-        with open(os.path.join(data_folder 'output_urls.json'), 'w') as f:
+        with open(os.path.join(data_folder, 'output_urls.json'), 'w') as f:
             f.write(json.dumps(output_urls, indent=4))
 
 
