@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 
-urls = [f'https://www.newegg.com/Laptops-Notebooks/SubCategory/ID-32/Page-{i}' for i in range(1, 10)]
+urls = [f'https://www.newegg.com/Laptops-Notebooks/SubCategory/ID-32/Page-{i}' for i in range(1, 11)]
 proxy_path = os.path.join(os.getcwd(), 'assets', 'proxies.txt')
 
 headers = {
