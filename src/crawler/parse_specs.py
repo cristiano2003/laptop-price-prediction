@@ -114,7 +114,8 @@ class LaptopSpecParse():
                     elif property_name in ('ac adapter ac adapter', 'ac adapter', 'battery battery', 'battery'):
                         battery = self.__process_text(cells[0].text)
 
-                        regex = [r'(\d+) wh', r'(\d+)-watt', r'(\d+) whr', r'(\d+) whrs', r'(\d+)whrs', r'(\d+)whr']
+                        regex = [r'(\d+) wh', r'(\d+)wh', r'(\d+)-watt', r'(\d+) whrs',
+                                 r'(\d+)whrs', r'(\d+)whr', r'(\d+) whr']
 
                         for r in regex:
                             match = re.search(r, battery.lower())
