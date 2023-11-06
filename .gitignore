@@ -164,5 +164,7 @@ assets/proxies.txt
 src/utils/extensions/*
 
 src/crawler/raw_htmls/*
+!src/crawler/raw_htmls/raw_0.html # Keep this file for testing
+
 .vscode
 src/crawler/raw_htmls.rar
