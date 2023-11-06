@@ -7,3 +7,9 @@ A Data Science Project at HUST
 ```bash
 pip install -e .
 ```
+
+## Train
+
+```bash
+python -m train
+```
