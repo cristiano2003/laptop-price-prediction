@@ -282,7 +282,15 @@ class LaptopSpecParse():
 
                     sout(f'Number of features: {number_of_features}', 'green')
 
-                    if number_of_features == 13:
+                    if number_of_features >= 9:
+                        # Set value of not existed properties to None
+                        properties = ['brand', 'cpu', 'screen_size', 'screen_resolution', 'memory', 'storage',
+                                      'graphic_type', 'graphic_name', 'weight', 'battery', 'refresh_rate']
+
+                        for prop in properties:
+                            if result['data'].get(prop) is None:
+                                result['data'][prop] = None
+
                         specs.append(result['data'])
                         self.db.update_collection('laptops', result['data'])
                         sout('Updated to database successfully', 'green')
@@ -291,12 +299,6 @@ class LaptopSpecParse():
                     sout(str(result), 'red')
 
             sout('Done', 'green')
-
-            # TODO: Store the output_urls in src/crawler/data as output_urls.json
-
-            data_folder = os.path.join(os.getcwd(), 'src', 'crawler', 'data', 'detail_specs')
-
-            os.makedirs(data_folder, exist_ok=True)
 
             print(specs)
 
@@ -309,8 +311,8 @@ if __name__ == '__main__':
         with open(os.path.join(os.getcwd(), 'src', 'crawler', 'data', 'detail_urls', f'output_urls_{i}.json'), 'r') as f:
             urls.extend(json.loads(f.read()))
 
-    # Divide the urls into pars, each part has 100 urls
-    urls = [urls[i:i + 100] for i in range(0, len(urls), 100)]
+    # Divide the urls into pars, each part has 200 urls
+    urls = [urls[i:i + 200] for i in range(0, len(urls), 200)]
 
     for url in urls:
         parser = LaptopSpecParse(urls=url)
