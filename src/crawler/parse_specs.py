@@ -20,10 +20,10 @@ class LaptopSpecParse():
 
     raw_htmls_dir = os.path.join(os.getcwd(), 'src', 'crawler', 'raw_htmls')
     proxy_path = os.path.join(os.getcwd(), 'assets', 'proxies.txt')
+    current_html_idx = 0
 
     def __init__(self, urls: list) -> None:
         self.urls = urls
-        self.current_html_idx = 0
         self.db = MongoDB(cluster='newegg')
 
     def __process_text(self, text: str, battery: bool = False):
@@ -209,8 +209,8 @@ class LaptopSpecParse():
 
         # -----------------------------------------------Parse the html to get information-----------------------------------------------
 
-        html_name = f'raw_{self.current_html_idx}.html'
-        self.current_html_idx += 1
+        html_name = f'raw_{LaptopSpecParse.current_html_idx}.html'
+        LaptopSpecParse.current_html_idx += 1
 
         with open(os.path.join(self.raw_htmls_dir, html_name), 'w', encoding='utf-8') as f:  # Save the raw html
             f.write(driver.page_source)
