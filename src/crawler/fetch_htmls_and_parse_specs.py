@@ -16,7 +16,7 @@ from src.utils.proxy import check_proxy
 from src.utils.database.mongodb import MongoDB
 
 
-class LaptopSpecParse():
+class FetchHTML():
 
     raw_htmls_dir = os.path.join(os.getcwd(), 'src', 'crawler', 'raw_htmls')
     proxy_path = os.path.join(os.getcwd(), 'assets', 'proxies.txt')
@@ -210,8 +210,8 @@ class LaptopSpecParse():
 
         # -----------------------------------------------Parse the html to get information-----------------------------------------------
 
-        html_name = f'raw_{LaptopSpecParse.current_html_idx}.html'
-        LaptopSpecParse.current_html_idx += 1
+        html_name = f'raw_{FetchHTML.current_html_idx}.html'
+        FetchHTML.current_html_idx += 1
 
         with open(os.path.join(self.raw_htmls_dir, html_name), 'w', encoding='utf-8') as f:  # Save the raw html
             f.write(driver.page_source)
@@ -316,7 +316,7 @@ if __name__ == '__main__':
     urls = [urls[i:i + 200] for i in range(0, len(urls), 200)]
 
     for url in urls:
-        parser = LaptopSpecParse(urls=url)
+        parser = FetchHTML(urls=url)
         parser.run(max_worker=10)
 
         # Sleep 10 minutes
