@@ -128,7 +128,7 @@ class LaptopSpecParse():
                 'data': None
             }
 
-        # TODO: Parse the above specs from the title using ChatGPT API Prompts using "chat_completion" function: Nam Nguyen
+        # TODO: Parse the above specs from the title using regex: Nam Nguyen
 
     def _parse_html(self) -> dict:
         try:
@@ -145,11 +145,26 @@ class LaptopSpecParse():
             data['price'] = float(
                 f'{self._process_text(strong.text.replace(",", ""), remove_dot=True)}.{self._process_text(sup.text, remove_dot=True)}')
 
-            # -------------------------------------------- Parse the specs -------------------------------------------- #
+            # -------------------------------------------- Parse the important specs -------------------------------------------- #
+            div_table = self.soup.find('div', {'class': 'product-section product-comparison'})
+            table = div_table.find('table')
+            tbody = table.find('tbody')
+
+            rows = tbody.find_all('tr')
+            for row in rows:
+                prop = row.find('th')
+                cells = row.find_all('td')
+
+                print(self._process_text(prop.text).lower(), end=': ')
+
+                for cell in cells:
+                    print(self._process_text(cell.text), end='|')
+                print()
+
+            # -------------------------------------------- Parse the remaining specs -------------------------------------------- #
 
             # Find all the tables with class: table-horizontal
             tables = self.soup.find_all('table', {'class': 'table-horizontal'})
-            found_refresh_rate = False  # If the refresh rate is not found, set it to 60 Hz
 
             for table in tables:
                 tbody = table.find('tbody')
@@ -161,40 +176,8 @@ class LaptopSpecParse():
 
                     property_name = self._process_text(th.text).lower()
 
-                    # Properties must have:
-                    if property_name == 'brand':
-                        data['brand'] = self._process_text(cells[0].text)
-
-                    elif property_name in ('cpu cpu', 'cpu'):
-                        data['cpu'] = self._process_text(cells[0].text)
-
-                    elif property_name in ('screen size screen size', 'screen size'):
+                    if property_name in ('screen size screen size', 'screen size'):
                         data['screen_size'] = self._process_text(cells[0].text)
-
-                    elif property_name in ('resolution resolution', 'resolution'):
-                        data['screen_resolution'] = self._process_text(cells[0].text)
-
-                    elif property_name in ('memory memory', 'memory'):
-                        data['memory'] = self._process_text(cells[0].text)
-
-                    elif property_name in ('ssd ssd', 'ssd'):
-                        ssd_storage = self._process_text(cells[0].text)
-                        if ssd_storage != 'No':
-                            data['storage'] = ssd_storage
-
-                    elif property_name in ('hdd hdd', 'hdd'):
-                        if data.get('storage') is not None:
-                            continue
-
-                        hdd_storage = self._process_text(cells[0].text)
-                        if hdd_storage != 'No':
-                            data['storage'] = hdd_storage
-
-                    elif property_name in ('graphic type graphic type', 'graphic type'):
-                        data['graphic_type'] = self._process_text(cells[0].text)
-
-                    elif property_name in ('gpu/vpu gpu/vpu', 'gpu/vpu'):
-                        data['graphic_name'] = self._process_text(cells[0].text)
 
                     elif property_name in ('weight weight', 'weight'):
                         data['weight'] = self._process_text(cells[0].text)
@@ -209,16 +192,7 @@ class LaptopSpecParse():
                             match = re.search(r, battery.lower())
                             if match:
                                 data['battery'] = match.group(1) + ' whrs'
-
                                 break
-                    else:
-                        # Properties may have:
-                        if property_name == 'refresh rate':
-                            found_refresh_rate = True
-                            data['refresh_rate'] = self._process_text(cells[0].text)
-
-            if not found_refresh_rate:
-                data['refresh_rate'] = '60 Hz'
 
         except Exception as e:
             return {
@@ -265,7 +239,7 @@ if __name__ == '__main__':
 
     htmls: list = os.listdir(HTML_DIR)
 
-    for html in htmls:
-        pass
+    lsp = LaptopSpecParse(htmls[0])
+    print(lsp._parse_html())
 
     # TODO: Export the dictionary to a csv file: Truc Nguyen
