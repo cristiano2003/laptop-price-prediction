@@ -264,5 +264,6 @@ if __name__ == '__main__':
     htmls: list = os.listdir(HTML_DIR)
 
     for html in htmls:
-        lsp = LaptopSpecParse(html)
-        print(lsp._parse_html())
+        pass
+
+    # TODO: Export the dictionary to a csv file: Nam Nguyen
