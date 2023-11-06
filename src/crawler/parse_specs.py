@@ -26,16 +26,17 @@ class LaptopSpecParse():
         self.urls = urls
         self.db = MongoDB(cluster='newegg')
 
-    def __process_text(self, text: str, battery: bool = False):
+    def __process_text(self, text: str, remove_dot: bool = False):
         # Strip
         text = text.strip()
 
         unexpected_chars = ['\n', '\t', '\r', '\"']
 
-        unexpected_chars += '.' if not battery else []
-
         for c in unexpected_chars:
             text = text.replace(c, '')
+
+        if remove_dot:
+            text = text.replace('.', '')
 
         # Remove long spaces
         list_text = text.split(' ')
@@ -61,7 +62,7 @@ class LaptopSpecParse():
             sup = current_price.find('sup')
 
             data['price'] = float(
-                f'{self.__process_text(strong.text.replace(",", ""))}.{self.__process_text(sup.text)}')
+                f'{self.__process_text(strong.text.replace(",", ""), remove_dot=True)}.{self.__process_text(sup.text, remove_dot=True)}')
 
             # -------------------------------------------- Parse the specs -------------------------------------------- #
 
@@ -120,8 +121,8 @@ class LaptopSpecParse():
                     elif property_name in ('ac adapter ac adapter', 'ac adapter', 'battery battery', 'battery'):
                         battery = self.__process_text(cells[0].text)
 
-                        regex = [r'(\d+) wh', r'(\d+)wh', r'(\d+)-watt', r'(\d+) whrs',
-                                 r'(\d+)whrs', r'(\d+)whr', r'(\d+) whr']
+                        regex = [r'(\d+(\.\d+)?) wh', r'(\d+(\.\d+)?)wh', r'(\d+(\.\d+)?)-watt', r'(\d+(\.\d+)?) whrs',
+                                 r'(\d+(\.\d+)?)whrs', r'(\d+(\.\d+)?)whr', r'(\d+(\.\d+)?) whr']
 
                         for r in regex:
                             match = re.search(r, battery.lower())
