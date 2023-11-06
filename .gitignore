@@ -165,4 +165,4 @@ src/utils/extensions/*
 
 src/crawler/raw_htmls/*
 .vscode
-raw_htmls.rar
+src/crawler/raw_htmls.rar
