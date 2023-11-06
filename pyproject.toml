@@ -14,7 +14,8 @@ dependencies = [
     "scikit-learn",
     "pandas",
     "numpy",
-    "matplotlib"
+    "matplotlib",
+    "polars"
 ]
 
 [project.optional-dependencies]
