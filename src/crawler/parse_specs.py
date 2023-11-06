@@ -292,7 +292,7 @@ class LaptopSpecParse():
                                 result['data'][prop] = None
 
                         specs.append(result['data'])
-                        self.db.update_collection('laptops', result['data'])
+                        self.db.update_collection('laptops_9_features', result['data'])
                         sout('Updated to database successfully', 'green')
 
                 else:
