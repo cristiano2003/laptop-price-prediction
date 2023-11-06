@@ -9,7 +9,7 @@ from sklearn.metrics import (
 )
 
 
-def evaluate(name, y_pred, y_true):
+def evaluate(name, y_true, y_pred):
     df = {
         "Model": name,
         "MSE": round(mean_squared_error(y_true, y_pred), 4),
@@ -22,6 +22,16 @@ def evaluate(name, y_pred, y_true):
 
 
 if __name__ == "__main__":
-    y_pred = np.array([1, 2, 3, 4, 5])
-    y_true = np.array([1.1, 2.2, 3.3, 4.2, 5])
-    print(evaluate("OK", y_pred, y_true))
+    y_true = np.array([1, 2, 3, 4, 5])
+    y_pred = np.array([1.1, 2.2, 3.3, 4.2, 5])
+    print(evaluate("OK", y_true, y_pred))
+
+    '''
+    ┌───────┬───────┬──────┬──────┬───────┬─────────┐
+    │ Model ┆ MSE   ┆ MAE  ┆ MAPE ┆ R2    ┆ Exp Var │
+    │ ---   ┆ ---   ┆ ---  ┆ ---  ┆ ---   ┆ ---     │
+    │ str   ┆ f64   ┆ f64  ┆ f64  ┆ f64   ┆ f64     │
+    ╞═══════╪═══════╪══════╪══════╪═══════╪═════════╡
+    │ OK    ┆ 0.036 ┆ 0.16 ┆ 0.07 ┆ 0.982 ┆ 0.9948  │
+    └───────┴───────┴──────┴──────┴───────┴─────────┘
+    '''
