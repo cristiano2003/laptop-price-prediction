@@ -1,0 +1,23 @@
+[project]
+name = "data-science-project"
+authors = [{name = "datvodinh", email = "vodinhdat03@gmail.com"}]
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "scrapy",
+    "beautifulsoup4",
+    "requests",
+    "pymongo",
+    "selenium",
+    "webdriver-manager",
+    "dev_tools_supporter",
+    "scikit-learn",
+    "pandas",
+    "numpy",
+    "matplotlib"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]

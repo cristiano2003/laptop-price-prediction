@@ -1,2 +1,9 @@
 # 2023-laptop-price-prediction
+
 A Data Science Project at HUST
+
+## Install Dependencies
+
+```bash
+pip install -e .
+```
