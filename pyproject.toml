@@ -1,8 +1,8 @@
 [project]
 name = "data-science-project"
 authors = [{name = "datvodinh", email = "vodinhdat03@gmail.com"}]
-version = "0.1.0"
-requires-python = ">=3.11"
+version = "0.1.1"
+requires-python = ">=3.10"
 dependencies = [
     "scrapy",
     "beautifulsoup4",
