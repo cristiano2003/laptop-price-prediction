@@ -258,6 +258,8 @@ class LaptopSpecParse():
             ```
         """
 
+        # TODO: Parse the specs from the title of the product: Nguyen Hoang
+
 
 if __name__ == '__main__':
 
@@ -266,4 +268,4 @@ if __name__ == '__main__':
     for html in htmls:
         pass
 
-    # TODO: Export the dictionary to a csv file: Nam Nguyen
+    # TODO: Export the dictionary to a csv file: Truc Nguyen
