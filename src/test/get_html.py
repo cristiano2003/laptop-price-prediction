@@ -7,7 +7,7 @@ from src.utils.selenium import ChromeDriver
 if __name__ == '__main__':
 
     proxy = {
-        'host': '138.122.192.24',
+        'host': '23.83.90.228',
         'port': 12345,
         'username': 'ebay2023',
         'password': 'proxyebaylam'
