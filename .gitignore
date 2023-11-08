@@ -168,3 +168,4 @@ src/crawler/raw_htmls/*
 
 .vscode
 src/crawler/raw_htmls.rar
+src/test/get_html.py
