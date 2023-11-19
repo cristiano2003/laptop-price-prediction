@@ -99,7 +99,7 @@ class ChromeDriver():
         webdriver_service = Service(ChromeDriverManager().install())
 
         chrome_options = Options()
-        chrome_options.add_argument("--window-size=400,400")
+        chrome_options.add_argument("--window-size=1366,768")
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument('--ignore-certificate-errors')
         chrome_options.add_argument('--ignore-ssl-errors')

@@ -16,7 +16,8 @@ dependencies = [
     "numpy",
     "matplotlib",
     "polars",
-    "openai"
+    "openai",
+    "undetected-chromedriver"
 ]
 
 [project.optional-dependencies]
