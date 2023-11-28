@@ -4,7 +4,7 @@ import sys
 import time
 sys.path.append(os.getcwd())  # NOQA
 
-from src.utils.base_selenium import ChromeDriver
+from src.utils.selenium import ChromeDriver
 
 if __name__ == '__main__':
 
