@@ -162,8 +162,6 @@ cython_debug/
 
 src/utils/extensions/*
 
-data/tgdd/raw_htmls/*
-
 
 !src/crawler/raw_htmls/raw_0.html # Keep this file for testing
 
