@@ -132,7 +132,7 @@ class Tgdd(BaseCrawler):
 
                 os.makedirs('data/tgdd/raw_htmls', exist_ok=True)
                 with open(f'data/tgdd/raw_htmls/{manufacturer}_{id}.html', 'w', encoding='utf-8') as f:
-                    f.write(data)
+                    f.write(html)
 
                 print('========> Successfully fetch HTML of', url)
 
