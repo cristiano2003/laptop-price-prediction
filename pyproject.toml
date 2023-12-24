@@ -16,7 +16,7 @@ dependencies = [
     "numpy",
     "matplotlib",
     "polars",
-    "openai"
+    "openai",
 ]
 
 [project.optional-dependencies]

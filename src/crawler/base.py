@@ -31,6 +31,17 @@ class BaseCrawler(ABC):
         db_path = os.path.join(self.DATABASE_DIR, filename)
         return sqlite3.connect(db_path)
 
-    def log(self, msg):
+    def log(self, msg, color='white'):
         datefmt = datetime.strftime(datetime.now(), format='%Y-%m-%d %H:%M:%S')
-        print(f'[{datefmt}]: {msg}')
+
+        # If color is green
+        if color == 'green':
+            print('\033[92m' + f'[{datefmt}]: {msg}' + '\033[0m')
+        # If color is red
+        elif color == 'red':
+            print('\033[91m' + f'[{datefmt}]: {msg}' + '\033[0m')
+        # If color is yellow
+        elif color == 'yellow':
+            print('\033[93m' + f'[{datefmt}]: {msg}' + '\033[0m')
+        else:
+            print(f'[{datefmt}]: {msg}')
