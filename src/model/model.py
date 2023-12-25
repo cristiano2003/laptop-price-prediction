@@ -10,6 +10,7 @@ import polars as pl
 import pandas as pd
 import numpy as np
 import math
+import pickle
 
 
 class LaptopPredictionModel:
@@ -58,6 +59,7 @@ class LaptopPredictionModel:
             self.grid.fit(X_train, y_train)
             y_pred_train = self.grid.predict(X_train)
             y_pred = self.grid.predict(X_test)
+            self._save_model()
         if self.scaler:
             x_scaler = StandardScaler()
             y_scaler = StandardScaler()
@@ -104,9 +106,18 @@ class LaptopPredictionModel:
         plt.show()
 
     def _plot_coef(self, coef):
+        coef = coef.squeeze()
+        index = np.argsort(coef)
+        coef = coef[index]
+        plt.figure(figsize=(10, 10))
         coefs = pd.DataFrame(
-            coef.T, index=self.columns, columns=["Coefficients"]
+            coef, index=self.columns[index], columns=["Coefficients"]
         )
         coefs.plot(kind="barh", figsize=(9, 7))
         plt.axvline(x=0, color=".5")
         plt.subplots_adjust(left=0.3)
+
+    def _save_model(self):
+        # save the best model in grid search
+        with open(f"./checkpoint/{self.model.__class__.__name__}.pkl", "wb") as f:
+            pickle.dump(self.grid.best_estimator_, f)
