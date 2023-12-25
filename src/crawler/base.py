@@ -2,7 +2,7 @@ import os
 import sys
 sys.path.append(os.getcwd())  # NOQA
 
-from abc import ABC
+from abc import ABC, abstractmethod
 from datetime import datetime
 
 import json
@@ -45,3 +45,15 @@ class BaseCrawler(ABC):
             print('\033[93m' + f'[{datefmt}]: {msg}' + '\033[0m')
         else:
             print(f'[{datefmt}]: {msg}')
+
+    @abstractmethod
+    def get_all_product_links(self):
+        pass
+
+    @abstractmethod
+    def crawl_raw_htmls(self):
+        pass
+
+    @abstractmethod
+    def parse_specs(self):
+        pass

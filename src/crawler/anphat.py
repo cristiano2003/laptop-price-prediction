@@ -104,7 +104,7 @@ class Anphat(BaseCrawler):
 
         return urls
 
-    def get_all_product(self):
+    def get_all_product_links(self):
         """
             Get all the product urls of all the manufacturers
         """
@@ -140,6 +140,19 @@ class Anphat(BaseCrawler):
         try:
             response = requests.get(url)
 
+            if response.status_code == 200:
+                return {
+                    'status': 'success',
+                    'message': f'Get {url} successfully',
+                    'data': response.text
+                }
+            else:
+                return {
+                    'status': 'error',
+                    'message': f'Error: {url} is not available',
+                    'data': []
+                }
+
         except Exception as e:
             self.log(f"Error: {str(e)}")
 
@@ -149,7 +162,58 @@ class Anphat(BaseCrawler):
                 'data': []
             }
 
+    def crawl_raw_htmls(self):
+
+        # Load the anphat product links
+        with open('data/anphat/anphat_product_links.json', 'r') as f:
+            anphat_product_links = json.load(f)
+
+        # Create the directory to save the htmls
+        save_dir = 'data/anphat/raw_htmls'
+        os.makedirs(save_dir, exist_ok=True)
+
+        # Go through all the manufacturers
+        for manufacturer in anphat_product_links:
+            self.log(f'========>> Getting raw htmls of {manufacturer.upper()}', color='yellow')
+
+            with ThreadPoolExecutor(max_workers=20) as executor:
+                futures = {}
+
+                # Go through all the product urls
+                for url in anphat_product_links[manufacturer]:
+                    futures[executor.submit(self.__fetch_html, url)] = url
+
+                # Get the results
+                for idx, future in enumerate(as_completed(list(futures.keys()))):
+                    url = futures[future]
+                    result = future.result()
+
+                    if result['status'] == 'success':
+                        self.log(f'==>{idx:>3}|{len(list(futures.keys())):<3} {result["message"]}', color='green')
+
+                        # Save the html
+                        save_path = f'data/anphat/raw_htmls/{manufacturer}_{idx}.html'
+                        with open(save_path, 'w', encoding='utf-8') as f:
+                            f.write(result['data'])
+
+                        # Insert to the database
+                        self.conn.execute(f"""
+                            INSERT INTO anphat_fetch_results (Manufacturer, Url, Raw_html_path)
+                            VALUES 
+                            ('{manufacturer}', '{url}', '{save_path}')
+                                          """)
+                        self.conn.commit()
+
+                    else:
+                        self.log(f'==>{idx:>3}|{len(list(futures.keys())):<3} {result["message"]}', color='red')
+
+    def parse_specs(self):
+        pass
+
 
 if __name__ == "__main__":
     anphat = Anphat()
     # anphat.get_all_product()
+    anphat.crawl_raw_htmls()
+
+    anphat.conn.close()

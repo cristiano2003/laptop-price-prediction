@@ -112,7 +112,7 @@ class Tgdd(BaseCrawler):
 
     # ----------------- Fetch all raw_htmls -----------------
 
-    def _crawl_raw_htmls(self):
+    def crawl_raw_htmls(self):
         """
             Crawl the raw HTML of all product pages
         Args:
@@ -281,4 +281,4 @@ class Tgdd(BaseCrawler):
 if __name__ == '__main__':
     tgdd = Tgdd(headless=True)
     # tgdd.get_all_product_links()
-    tgdd._crawl_raw_htmls()
+    tgdd.crawl_raw_htmls()
