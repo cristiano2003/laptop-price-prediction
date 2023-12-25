@@ -159,13 +159,10 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-assets/proxies.txt
 
 src/utils/extensions/*
 
-src/crawler/raw_htmls/*
+
 !src/crawler/raw_htmls/raw_0.html # Keep this file for testing
 
 .vscode
-src/crawler/raw_htmls.rar
-src/test/get_html.py
