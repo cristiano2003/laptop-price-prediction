@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import pickle
 
-
 categorical_features = ['Manufacturer', 'CPU', 'RAM Type', "Screen Resolution"]
 numerical_features = ['CPU Speed (GHz)', 'RAM (GB)', 'Bus (MHz)', 'Storage (GB)', 'CPU brand modifier',
                       'Screen Size (inch)', 'Refresh Rate (Hz)', 'Weight (kg)', 'Battery']
@@ -56,17 +55,21 @@ def predict(brand, cpu, cpu_brand_type, cpu_hz, ram_type, ram, ram_bus,
     return round(float(pred_model.predict(np.array(data))[0]), 2) * 1000000
 
 
-with gr.Blocks(theme=gr.themes.Soft()) as demo:
+with gr.Blocks(theme=gr.themes.Soft(primary_hue="green")) as demo:
     # add gr title to the middle of the page
     gr.Markdown("# Laptop Price Prediction")
 
-    gr.Markdown("## **Brand**")
     with gr.Row():
+        model = gr.Dropdown(
+            label="Model",
+            choices=["XGBRegressor", "RandomForestRegressor", "LinearRegression"],
+            value="XGBRegressor",
+        )
 
         Brand = gr.Radio(
             label="Brand",
             choices=['acer', 'asus', 'dell', 'hp', 'lenovo', 'lg', 'msi'],
-            scale=2
+            value='acer'
         )
     gr.Markdown("## **CPU**")
     with gr.Row():
@@ -95,7 +98,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
             choices=["1366x768", "1920x1080", "2560x1440"],
             value="1920x1080"
         )
-        ScreenSize = gr.Slider(label="Screen Size (inch)", minimum=13, maximum=17, step=1, value=15.6, interactive=True)
+        ScreenSize = gr.Radio(label="Screen Size (inch)", choices=[13.3, 14.0, 15.6, 17.3], value=15.6)
         RefreshRate = gr.Radio(label="Refresh Rate (Hz)", choices=[60, 120, 144, 240], value=60)
 
     gr.Markdown("## **Other Features**")
@@ -104,23 +107,20 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
         Weight = gr.Slider(label="Weight (kg)", minimum=1.0, maximum=3.0, step=0.1, value=1.4, interactive=True)
         Storage = gr.Radio(label="Storage (GB)", choices=[256, 512, 1024, 2048], value=512)
     # Output Prediction
-    gr.Markdown("## **Model**")
+    gr.Markdown("## **Prediction**")
     with gr.Row():
-        model = gr.Dropdown(
-            label="Model",
-            choices=["XGBRegressor", "RandomForestRegressor", "LinearRegression"],
-            value="XGBRegressor",
-        )
-        output = gr.Number(label="Prediction (VND)")
 
-    submit_button = gr.Button("Submit")
-    submit_button.click(fn=predict,
-                        outputs=output,
-                        inputs=[Brand, CPUBrand, CPUBrandType, CPUHz, RAMType, RAM, RAMBus,
-                                ScreenResolution, RefreshRate, ScreenSize, Storage, Battery, Weight, model
-                                ],
-                        queue=True,
-                        )
+        output = gr.Number(label="Prediction (VND)", info="Click Submit to predict")
+    with gr.Row():
+        submit_button = gr.Button("Submit")
+        submit_button.click(fn=predict,
+                            outputs=output,
+                            inputs=[Brand, CPUBrand, CPUBrandType, CPUHz, RAMType, RAM, RAMBus,
+                                    ScreenResolution, RefreshRate, ScreenSize, Storage, Battery, Weight, model
+                                    ],
+                            queue=True,
+                            )
+        clear_button = gr.ClearButton(components=[output], value="Clear")
 
 if __name__ == "__main__":
     demo.launch(max_threads=50, debug=True, prevent_thread_lock=True, show_error=True)

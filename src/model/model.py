@@ -76,11 +76,17 @@ class LaptopPredictionModel:
             y_pred_train = self.model.predict(X_train)
             y_pred = self.model.predict(X_test)
             # plot feature importance
+
         if self.grid_search:
+            plt.figure(figsize=(18, 6))
             self.feature_importances = self.grid.best_estimator_.feature_importances_
             self._plot_feature_importance(x=range(X_train.shape[1]))
         else:
+            plt.figure(figsize=(20, 6))
             self._plot_coef(coef=self.model.coef_)
+
+        self._plot_regression(y_test, y_pred)
+        plt.show()
 
         metrics = {
             "Model": self.model.__class__.__name__,
@@ -95,27 +101,35 @@ class LaptopPredictionModel:
         print(metrics)
         return metrics
 
+    def _plot_regression(self, y_test, y_pred):
+        plt.subplot(1, 2, 2)
+        plt.scatter(y_test, y_pred)
+        plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'k--', lw=4)
+        plt.xlabel('Actual')
+        plt.ylabel('Predicted')
+        plt.title("Comparison")
+
     def _plot_feature_importance(self, x):
+        plt.subplot(1, 2, 1)
         indices = np.argsort(self.feature_importances)[::-1]
         # plot feature importance and transpose to horizontal
-        plt.figure(figsize=(10, 5))
         plt.title("Feature Importance")
         plt.bar(x, self.feature_importances[indices], align='center')
         plt.xticks(x, self.columns[indices], rotation=90)
         plt.tight_layout()
-        plt.show()
 
     def _plot_coef(self, coef):
+
+        plt.subplot(1, 2, 1)
         coef = coef.squeeze()
         index = np.argsort(coef)
         coef = coef[index]
-        plt.figure(figsize=(10, 10))
         coefs = pd.DataFrame(
             coef, index=self.columns[index], columns=["Coefficients"]
         )
-        coefs.plot(kind="barh", figsize=(9, 7))
-        plt.axvline(x=0, color=".5")
-        plt.subplots_adjust(left=0.3)
+        plt.title("Coefficients")
+        plt.bar(coefs.index, coefs["Coefficients"])
+        plt.xticks(rotation=90)
 
     def _save_model(self):
         # save the best model in grid search
