@@ -23,14 +23,16 @@ class Anphat(BaseCrawler):
         # Connect to the database
         self.conn = self.connect_db('introds.db')
 
-    def __parse_category_page(self, url: str) -> list:
+    ############################ Parse the product category page ############################
+
+    def __parse_category_page(self, url: str) -> dict:
         """
             Get all the product links from a category page
         Args:
             url (str): The url of a category page
 
         Returns:
-            list: List of product links
+            dict: The status, message and data of the request
         """
 
         urls = []
@@ -123,8 +125,31 @@ class Anphat(BaseCrawler):
 
         self.log('========>> Done!', color='green')
 
+    ############################ Fetch all the htmls ############################
+
+    def __fetch_html(self, url: str) -> dict:
+        """
+            Fetch the html of a product page
+        Args:
+            url (str): The url of a product page
+
+        Returns:
+            dict: The status, message and data of the request
+        """
+
+        try:
+            response = requests.get(url)
+
+        except Exception as e:
+            self.log(f"Error: {str(e)}")
+
+            return {
+                'status': 'error',
+                'message': f'Error: {str(e)}',
+                'data': []
+            }
+
 
 if __name__ == "__main__":
     anphat = Anphat()
-    # anphat._get_product_urls('hp')
-    anphat.get_all_product()
+    # anphat.get_all_product()
