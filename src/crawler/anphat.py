@@ -207,8 +207,32 @@ class Anphat(BaseCrawler):
                     else:
                         self.log(f'==>{idx:>3}|{len(list(futures.keys())):<3} {result["message"]}', color='red')
 
+    ############################ Parse the raw htmls ############################
+
+    def __extract_raw_features(self, html_path: str) -> dict:
+        """
+            Extract the raw features from the raw html
+        Args:
+            html_path (str): The path to the raw html
+
+        Returns:
+            dict: The raw features
+        """
+
+        # Get the information in the database
+        result = self.conn.execute(f"""
+            select Manufacturer, Url, Raw_html_path from anphat_fetch_results
+            where Raw_html_path = '{html_path}'
+                          """).fetchone()
+
+        manufacturer = result[0]
+        url = result[1]
+        raw_html_path = result[2]
+
     def parse_specs(self):
-        pass
+        raw_htmls_dir = 'data/anphat/raw_htmls'
+
+        raw_htmls_path = [os.path.join(raw_htmls_dir, x) for x in os.listdir(raw_htmls_dir) if x.endswith('.html')]
 
 
 if __name__ == "__main__":
