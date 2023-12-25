@@ -7,3 +7,11 @@ A Data Science Project at HUST
 ```bash
 pip install -e .
 ```
+
+## Demo
+
+```bash
+python demo/app.py
+```
+
+![Alt text](img/image.png)
