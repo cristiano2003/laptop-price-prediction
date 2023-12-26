@@ -1,8 +1,12 @@
 from xgboost import XGBRegressor
 from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import GridSearchCV
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import (
+    GradientBoostingRegressor,
+    RandomForestRegressor,
+    AdaBoostRegressor,
+    BaggingRegressor
+)
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import matplotlib.pyplot as plt
@@ -36,6 +40,14 @@ class LaptopPredictionModel:
             self.model = LinearRegression()
             self.grid_search = False
             self.scaler = True
+        elif model == "ada":
+            self.model = AdaBoostRegressor()
+            self.grid_search = True
+            self.scaler = False
+        elif model == "bag":
+            self.model = BaggingRegressor()
+            self.grid_search = True
+            self.scaler = False
 
         self.params = params
         self.columns = columns
@@ -77,13 +89,16 @@ class LaptopPredictionModel:
             y_pred = self.model.predict(X_test)
             # plot feature importance
 
-        if self.grid_search:
-            plt.figure(figsize=(18, 6))
-            self.feature_importances = self.grid.best_estimator_.feature_importances_
-            self._plot_feature_importance(x=range(X_train.shape[1]))
-        else:
-            plt.figure(figsize=(20, 6))
-            self._plot_coef(coef=self.model.coef_)
+        try:
+            if self.grid_search:
+                plt.figure(figsize=(18, 6))
+                self.feature_importances = self.grid.best_estimator_.feature_importances_
+                self._plot_feature_importance(x=range(X_train.shape[1]))
+            else:
+                plt.figure(figsize=(20, 6))
+                self._plot_coef(coef=self.model.coef_)
+        except:
+            pass
 
         self._plot_regression(y_test, y_pred)
         plt.show()
