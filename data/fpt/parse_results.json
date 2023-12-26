@@ -10,7 +10,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "5500 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -26,7 +27,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "3 Cell"
@@ -42,7 +44,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -57,7 +60,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "5500 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD"
     },
@@ -71,7 +75,8 @@
         "CPU Speed (GHz)": "4.30 GHz",
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -85,7 +90,8 @@
         "CPU brand modifier": "Ryzen 5",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels Màn hình chính:",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "50 Wh"
@@ -101,7 +107,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -116,7 +123,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "3 Cell"
@@ -132,7 +140,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "3 Cell"
@@ -148,7 +157,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "5500 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -164,7 +174,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -179,7 +190,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -194,7 +206,8 @@
         "CPU Speed (GHz)": "4.30 GHz",
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -210,7 +223,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "5500 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD"
     },
@@ -225,7 +239,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -238,7 +253,8 @@
         "CPU brand modifier": "Ryzen 5",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels Màn hình chính:",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "50 Wh"
@@ -254,7 +270,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -269,7 +286,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "2880 x 1800 Pixels",
         "Refresh Rate (Hz)": "90 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -285,7 +303,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -300,7 +319,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -314,7 +334,8 @@
         "CPU Speed (GHz)": "4.6 GHz",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "42 Wh"
@@ -328,7 +349,8 @@
         "CPU brand modifier": "Core i3",
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1080 Pixels Màn hình chính:",
         "Refresh Rate (Hz)": "60  Màn hình chính: Hz",
         "Battery": "3 Cell"
     },
@@ -343,7 +365,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "16 inch",
+        "Screen Size (inch)": "16 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "3 Cell"
     },
@@ -358,7 +381,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -372,7 +396,8 @@
         "CPU Speed (GHz)": "5.4 GHz",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -387,7 +412,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "AMD"
     },
@@ -402,7 +428,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "65 Wh"
@@ -418,7 +445,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "3 Cell"
     },
@@ -433,7 +461,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -448,7 +477,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "2880 x 1800 Pixels",
         "Refresh Rate (Hz)": "90 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "4 Cell"
@@ -464,7 +494,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "3 Cell"
     },
@@ -479,7 +510,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -494,7 +526,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -508,7 +541,8 @@
         "CPU Speed (GHz)": "4.7 GHz",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "90 Wh"
@@ -522,7 +556,8 @@
         "CPU brand modifier": "Ryzen 7",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "16 inch",
+        "Screen Size (inch)": "16 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "42 Wh"
@@ -535,7 +570,8 @@
         "CPU manufacturer": "Intel",
         "CPU brand modifier": "Core i7",
         "RAM (GB)": "16 GB",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels Màn hình chính:",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "90 Wh"
@@ -550,7 +586,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -565,7 +602,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "2880 x 1800 Pixels",
         "Refresh Rate (Hz)": "90 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "4 Cell"
@@ -581,7 +619,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "5500 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "2880 x 1800 Pixels",
         "Refresh Rate (Hz)": "90 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -596,7 +635,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "2880 x 1800 Pixels Màn hình chính:",
         "Refresh Rate (Hz)": "90 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -610,7 +650,8 @@
         "CPU Speed (GHz)": "4.1 GHz",
         "RAM (GB)": "8 GB (2 thanh 4 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "GPU manufacturer": "Intel"
     },
     {
@@ -622,7 +663,8 @@
         "CPU brand modifier": "Core i7",
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR5",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "2880 x 1800 Pixels",
         "Refresh Rate (Hz)": "90 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -637,7 +679,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "165 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "90 Wh"
@@ -653,7 +696,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz"
     },
     {
@@ -666,7 +710,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "2880 x 1800 Pixels",
         "Refresh Rate (Hz)": "90 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -681,7 +726,8 @@
         "CPU Speed (GHz)": "4.7 GHz",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -696,7 +742,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6  Chính: inch",
+        "Screen Size (inch)": "15.6  Chính: inch",
+        "Screen Resolution": "1920 x 1080 Pixels Màn hình chính:",
         "Refresh Rate (Hz)": "144  Màn hình chính: Hz",
         "GPU manufacturer": "Intel"
     },
@@ -710,7 +757,8 @@
         "CPU Speed (GHz)": "4.7 GHz",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "2880 x 1620 Pixels",
         "Refresh Rate (Hz)": "120 Hz"
     },
     {
@@ -723,7 +771,8 @@
         "CPU Speed (GHz)": "5.4 GHz",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "2880 x 1620 Pixels",
         "Refresh Rate (Hz)": "120 Hz"
     },
     {
@@ -737,7 +786,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "2880 x 1800 Pixels",
         "Refresh Rate (Hz)": "90 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "3 Cell"
@@ -752,7 +802,8 @@
         "CPU Speed (GHz)": "4.7 GHz",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "2880 x 1800 Pixels",
         "Refresh Rate (Hz)": "90 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -767,7 +818,8 @@
         "CPU Speed (GHz)": "4.5 GHz",
         "RAM (GB)": "16 GB (1 thanh 16 GB)",
         "RAM Type": "LPDDR5X",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "2880 x 1800 Pixels",
         "Refresh Rate (Hz)": "120",
         "GPU manufacturer": "Intel",
         "Battery": "75 Wh"
@@ -782,7 +834,8 @@
         "CPU Speed (GHz)": "4.4 GHz",
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "42 Wh"
@@ -798,7 +851,8 @@
         "RAM (GB)": "16 GB (1 thanh 16 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "165 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -813,7 +867,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz"
     },
     {
@@ -826,7 +881,8 @@
         "CPU Speed (GHz)": "4.5 GHz",
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR5",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "90 Wh"
@@ -841,7 +897,8 @@
         "CPU Speed (GHz)": "5.4 GHz",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -853,7 +910,8 @@
         "CPU manufacturer": "AMD",
         "CPU brand modifier": "Ryzen 5",
         "RAM (GB)": "8 GB",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "3 Cell"
@@ -869,7 +927,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "5500 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "3 Cell"
@@ -885,7 +944,8 @@
         "RAM (GB)": "8 GB (2 thanh 4 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "43 Wh"
@@ -901,7 +961,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "6400 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "3 Cell"
     },
@@ -916,7 +977,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "5500 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "3 Cell"
@@ -932,7 +994,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "41 mAh"
@@ -948,7 +1011,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "43 Wh"
@@ -964,7 +1028,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "41 mAh"
@@ -980,7 +1045,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "41 Wh"
@@ -993,7 +1059,8 @@
         "CPU manufacturer": "Intel",
         "CPU brand modifier": "Core i7",
         "RAM (GB)": "16 GB",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "3 Cell"
     },
@@ -1008,7 +1075,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Battery": "3 Cell"
     },
     {
@@ -1020,7 +1088,8 @@
         "CPU brand modifier": "Core i5",
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -1036,7 +1105,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Battery": "3 Cell"
     },
     {
@@ -1050,7 +1120,8 @@
         "RAM (GB)": "8 GB (2 thanh 4 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "3 Cell"
     },
@@ -1062,7 +1133,8 @@
         "CPU manufacturer": "Intel",
         "CPU brand modifier": "Core i7",
         "RAM (GB)": "16 GB",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "51 Wh"
@@ -1078,7 +1150,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "16.1 inch",
+        "Screen Size (inch)": "16.1 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -1093,7 +1166,8 @@
         "RAM (GB)": "16 GB (1 thanh 16 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "13.3 inch",
+        "Screen Size (inch)": "13.3 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "GPU manufacturer": "AMD",
         "Battery": "3 Cell"
     },
@@ -1105,7 +1179,8 @@
         "CPU manufacturer": "Intel",
         "CPU brand modifier": "Core i5",
         "RAM (GB)": "16 GB",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "51 Wh"
     },
@@ -1120,7 +1195,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "43 Wh"
@@ -1135,7 +1211,8 @@
         "RAM (GB)": "8 GB (2 thanh 4 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -1148,7 +1225,8 @@
         "CPU manufacturer": "Intel",
         "CPU brand modifier": "Core i7",
         "RAM (GB)": "8 GB",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "43 Wh"
     },
@@ -1162,7 +1240,8 @@
         "CPU Speed (GHz)": "4.60 GHz",
         "RAM (GB)": "8 GB (2 thanh 4 GB)",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Battery": "3 Cell"
     },
     {
@@ -1175,7 +1254,8 @@
         "RAM (GB)": "8 GB (2 thanh 4 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15,6 inch",
+        "Screen Size (inch)": "15,6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "3 Cell"
     },
@@ -1187,7 +1267,8 @@
         "CPU manufacturer": "Intel",
         "CPU brand modifier": "Core i7",
         "RAM (GB)": "8 GB",
-        "Screen Resolution": "13.3 inch",
+        "Screen Size (inch)": "13.3 inch",
+        "Screen Resolution": "2880 x 1800 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "66 Wh"
     },
@@ -1202,7 +1283,8 @@
         "RAM (GB)": "8 GB (2 thanh 4 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "41 Wh"
     },
@@ -1217,7 +1299,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "16.1 inch",
+        "Screen Size (inch)": "16.1 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -1232,7 +1315,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "41"
@@ -1248,7 +1332,8 @@
         "RAM (GB)": "8 GB (2 thanh 4 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -1262,7 +1347,8 @@
         "CPU brand modifier": "Core i3",
         "CPU Speed (GHz)": "4.1 GHz",
         "RAM (GB)": "8 GB (2 thanh 8 GB)",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
     },
@@ -1274,7 +1360,8 @@
         "CPU manufacturer": "Intel",
         "CPU brand modifier": "Core i7",
         "RAM (GB)": "16 GB",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "51 Wh"
     },
@@ -1289,7 +1376,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "42 Wh"
@@ -1302,7 +1390,8 @@
         "CPU manufacturer": "AMD",
         "CPU brand modifier": "Ryzen 5",
         "RAM (GB)": "16 GB",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "4 Cell"
@@ -1318,7 +1407,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -1334,7 +1424,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -1349,7 +1440,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -1364,7 +1456,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "38 Wh"
@@ -1380,7 +1473,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -1396,7 +1490,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5200 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "65 Wh"
@@ -1412,7 +1507,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "GPU manufacturer": "Intel"
     },
     {
@@ -1426,7 +1522,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "4266 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "57 Wh"
@@ -1442,7 +1539,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "16 inch",
+        "Screen Size (inch)": "16 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -1458,7 +1556,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "2 Cell"
@@ -1474,7 +1573,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "GPU manufacturer": "Intel"
     },
     {
@@ -1488,7 +1588,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "120 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "4 Cell"
@@ -1504,7 +1605,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "Hz",
         "GPU manufacturer": "AMD"
     },
@@ -1519,7 +1621,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "5500 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "42 Wh"
@@ -1535,7 +1638,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "120 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "60 Wh"
@@ -1551,7 +1655,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "47 Wh"
@@ -1567,7 +1672,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "47 Wh"
@@ -1583,7 +1689,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -1599,7 +1706,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "GPU manufacturer": "Intel"
     },
     {
@@ -1613,7 +1721,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -1629,7 +1738,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD"
     },
@@ -1644,7 +1754,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "2560 x 1600 Pixels",
         "Refresh Rate (Hz)": "165 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "80 Wh"
@@ -1660,7 +1771,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD"
     },
@@ -1675,7 +1787,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "LPDDR4X",
         "Bus (MHz)": "4266 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD"
     },
@@ -1690,7 +1803,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "LPDDR4X",
         "Bus (MHz)": "4266 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "GPU manufacturer": "AMD"
     },
     {
@@ -1704,7 +1818,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -1720,7 +1835,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR4X",
         "Bus (MHz)": "4266 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60",
         "GPU manufacturer": "Intel"
     },
@@ -1735,7 +1851,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5600 MHz",
-        "Screen Resolution": "16 inch",
+        "Screen Size (inch)": "16 inch",
+        "Screen Resolution": "2560 x 1600 Pixels",
         "Refresh Rate (Hz)": "165 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "80 Wh"
@@ -1751,7 +1868,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "60 Wh"
@@ -1767,7 +1885,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5200 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "2560 x 1600 Pixels",
         "Refresh Rate (Hz)": "165 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "80 Wh"
@@ -1783,7 +1902,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -1798,7 +1918,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5200 MHz",
-        "Screen Resolution": "16 inch",
+        "Screen Size (inch)": "16 inch",
+        "Screen Resolution": "2560 x 1600 Pixels",
         "Refresh Rate (Hz)": "165 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "80 Wh"
@@ -1814,7 +1935,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "6400 MHz",
-        "Screen Resolution": "1.4 inch",
+        "Screen Size (inch)": "1.4 inch",
+        "Screen Resolution": "1080 x 2240 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD"
     },
@@ -1829,7 +1951,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "16 inch",
+        "Screen Size (inch)": "16 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "56.6 Wh"
@@ -1845,7 +1968,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "GPU manufacturer": "AMD"
     },
     {
@@ -1859,7 +1983,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "45 Wh"
@@ -1875,7 +2000,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "50 Wh"
@@ -1891,7 +2017,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR4X",
         "Bus (MHz)": "4266 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD"
     },
@@ -1906,7 +2033,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "47 Wh"
@@ -1922,7 +2050,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "3 Cell"
     },
@@ -1937,7 +2066,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels Màn hình chính:",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -1952,7 +2082,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "53 Giờ"
@@ -1968,7 +2099,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -1983,7 +2115,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6  Chính: inch",
+        "Screen Size (inch)": "15.6  Chính: inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144  Màn hình chính: Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -1998,7 +2131,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2013,7 +2147,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -2026,7 +2161,8 @@
         "CPU brand modifier": "Ryzen 5",
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD"
     },
@@ -2041,7 +2177,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2055,7 +2192,8 @@
         "CPU Speed (GHz)": "4.6 GHz",
         "RAM (GB)": "32 GB (2 thanh 16 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -2068,7 +2206,8 @@
         "CPU brand modifier": "Core i5",
         "CPU Speed (GHz)": "4.40 GHz",
         "RAM (GB)": "8 GB",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "3 Cell"
@@ -2084,7 +2223,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2098,7 +2238,8 @@
         "CPU Speed (GHz)": "4.4 GHz",
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2113,7 +2254,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -2126,7 +2268,8 @@
         "CPU brand modifier": "Ryzen 5",
         "CPU Speed (GHz)": "4.30 GHz",
         "RAM (GB)": "8 GB",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "40 Giờ"
@@ -2142,7 +2285,8 @@
         "RAM (GB)": "8 GB (2 thanh 4 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "2400 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2157,7 +2301,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2172,7 +2317,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "2666 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2186,7 +2332,8 @@
         "CPU Speed (GHz)": "4.70 GHz",
         "RAM (GB)": "16 GB (1 thanh 16 GB)",
         "RAM Type": "LPDDR4",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "2560 x 1440 Pixels Màn hình chính:",
         "Refresh Rate (Hz)": "60  Màn hình chính: Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2201,7 +2348,8 @@
         "RAM (GB)": "8 GB (2 thanh 4 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "2400 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2216,7 +2364,8 @@
         "RAM (GB)": "16 GB (1 thanh 16 GB)",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "6400 MHz",
-        "Screen Resolution": "16 inch",
+        "Screen Size (inch)": "16 inch",
+        "Screen Resolution": "3840 x 2400 Pixels Màn hình chính:",
         "Refresh Rate (Hz)": "60  Màn hình chính: Hz",
         "GPU manufacturer": "AMD"
     },
@@ -2230,7 +2379,8 @@
         "CPU Speed (GHz)": "4.40 GHz",
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR5",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "4 Cell"
@@ -2245,7 +2395,8 @@
         "CPU Speed (GHz)": "4.50 GHz",
         "RAM (GB)": "16 GB (1 thanh 16 GB)",
         "RAM Type": "LPDDR4",
-        "Screen Resolution": "16.1 inch",
+        "Screen Size (inch)": "16.1 inch",
+        "Screen Resolution": "FHD (1920 x 1080) Màn hình chính:",
         "Refresh Rate (Hz)": "60  Màn hình chính: Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -2260,7 +2411,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -2275,7 +2427,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -2290,7 +2443,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "52.4 Wh"
@@ -2306,7 +2460,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "5200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "144",
         "GPU manufacturer": "Intel"
     },
@@ -2321,7 +2476,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2336,7 +2492,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -2351,7 +2508,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "39.3 Wh"
@@ -2367,7 +2525,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "39.3 Wh"
@@ -2383,7 +2542,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "39.3 Wh"
@@ -2399,7 +2559,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Đang cập nhật",
         "Battery": "53.5 Wh"
@@ -2415,7 +2576,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "AMD"
     },
@@ -2430,7 +2592,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "39.3 Wh"
@@ -2445,7 +2608,8 @@
         "CPU Speed (GHz)": "4.4 GHz",
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -2460,7 +2624,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "53.5 Wh"
@@ -2476,7 +2641,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "39.3 Wh"
@@ -2492,7 +2658,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2507,7 +2674,8 @@
         "RAM (GB)": "16 GB (1 thanh 16 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "3 Cell"
@@ -2523,7 +2691,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2538,7 +2707,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2553,7 +2723,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "39.3 Wh"
@@ -2569,7 +2740,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -2584,7 +2756,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2599,7 +2772,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "393 Wh"
@@ -2615,7 +2789,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2630,7 +2805,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5200 MHz",
-        "Screen Resolution": "17.3 inch",
+        "Screen Size (inch)": "17.3 inch",
+        "Screen Resolution": "2560 x 1440 Pixels",
         "Refresh Rate (Hz)": "240 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2645,7 +2821,8 @@
         "RAM (GB)": "32 GB (2 thanh 16 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5600 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "2560 x 1600 Pixels",
         "Refresh Rate (Hz)": "240 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2660,7 +2837,8 @@
         "RAM (GB)": "64 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "17.3 inch",
+        "Screen Size (inch)": "17.3 inch",
+        "Screen Resolution": "3840 x 2160 Pixels",
         "Refresh Rate (Hz)": "120 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2675,7 +2853,8 @@
         "RAM (GB)": "32 GB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "17.3 inch",
+        "Screen Size (inch)": "17.3 inch",
+        "Screen Resolution": "2560 x 1440 Pixels",
         "Refresh Rate (Hz)": "240 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2689,7 +2868,8 @@
         "CPU Speed (GHz)": "4.4 GHz",
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR5",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "144 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -2704,7 +2884,8 @@
         "RAM (GB)": "16 MB",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5600 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "2560 x 1600 Pixels",
         "Refresh Rate (Hz)": "240 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2719,7 +2900,8 @@
         "RAM (GB)": "32 GB (2 thanh 16 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "5600 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "2560 x 1600 Pixels",
         "Refresh Rate (Hz)": "120 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "90 Wh"
@@ -2735,7 +2917,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "2560 x 1600 Pixels",
         "Refresh Rate (Hz)": "120 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2750,7 +2933,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2765,7 +2949,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15,6 inch",
+        "Screen Size (inch)": "15,6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "AMD",
         "Battery": "39.3 Wh"
@@ -2781,7 +2966,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2796,7 +2982,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2811,7 +2998,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2826,7 +3014,8 @@
         "RAM (GB)": "8 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2841,7 +3030,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "2666 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "120 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2856,7 +3046,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "2666 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "FHD (1920 x 1080)",
         "Refresh Rate (Hz)": "120 Hz",
         "GPU manufacturer": "NVIDIA"
     },
@@ -2871,7 +3062,8 @@
         "RAM (GB)": "16 GB (2 thanh 8 GB)",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "120 Hz"
     },
     {
@@ -2883,7 +3075,8 @@
         "CPU brand modifier": "Core i7",
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "120 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2898,7 +3091,8 @@
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels Màn hình chính:",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2912,7 +3106,8 @@
         "CPU Speed (GHz)": "4.50 GHz",
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "3420 mAh"
     },
@@ -2925,7 +3120,8 @@
         "CPU brand modifier": "Core i7",
         "CPU Speed (GHz)": "4.40 GHz",
         "RAM (GB)": "8 GB",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "120 Hz",
         "Battery": "54 Wh"
     },
@@ -2940,7 +3136,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "DDR4",
         "Bus (MHz)": "3200 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "1200 x 1920 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "54 Wh"
@@ -2954,7 +3151,8 @@
         "CPU brand modifier": "Core i7",
         "RAM (GB)": "16 GB (1 thanh 16 GB)",
         "RAM Type": "LPDDR5",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "2560 x 1600 Pixels",
         "Refresh Rate (Hz)": "120 Hz"
     },
     {
@@ -2968,7 +3166,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz"
     },
     {
@@ -2982,7 +3181,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "4800 MHz",
-        "Screen Resolution": "16 inch",
+        "Screen Size (inch)": "16 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel"
     },
@@ -2995,7 +3195,8 @@
         "CPU brand modifier": "Core i7",
         "CPU Speed (GHz)": "5.00 GHz",
         "RAM (GB)": "8 GB",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1080 Pixels",
         "Refresh Rate (Hz)": "120 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "54 Wh"
@@ -3009,7 +3210,8 @@
         "CPU brand modifier": "Core i5",
         "RAM (GB)": "8 GB (1 thanh 8 GB)",
         "RAM Type": "DDR4",
-        "Screen Resolution": "15.6 inch",
+        "Screen Size (inch)": "15.6 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "120 Hz"
     },
     {
@@ -3023,7 +3225,8 @@
         "RAM (GB)": "16 GB (1 thanh 16 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "6000 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "2560 x 1600 Pixels",
         "Refresh Rate (Hz)": "120 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "80 Wh"
@@ -3038,7 +3241,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "5200 MHz",
-        "Screen Resolution": "14.0 inch",
+        "Screen Size (inch)": "14.0 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "Intel",
         "Battery": "72 Wh"
@@ -3051,7 +3255,8 @@
         "CPU manufacturer": "Intel",
         "CPU brand modifier": "Core i7",
         "RAM (GB)": "16 GB",
-        "Screen Resolution": "14 inch",
+        "Screen Size (inch)": "14 inch",
+        "Screen Resolution": "1920 x 1200 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "Battery": "72 Wh"
     },
@@ -3065,7 +3270,8 @@
         "RAM (GB)": "16 GB",
         "RAM Type": "LPDDR5",
         "Bus (MHz)": "6000 MHz",
-        "Screen Resolution": "16.0 inch",
+        "Screen Size (inch)": "16.0 inch",
+        "Screen Resolution": "2560 x 1600 Pixels",
         "Refresh Rate (Hz)": "60 Hz",
         "GPU manufacturer": "NVIDIA",
         "Battery": "90 Wh"
@@ -3081,7 +3287,8 @@
         "RAM (GB)": "16 GB (1 thanh 16 GB)",
         "RAM Type": "DDR5",
         "Bus (MHz)": "6000 MHz",
-        "Screen Resolution": "14.0  Chính: inch",
+        "Screen Size (inch)": "14.0  Chính: inch",
+        "Screen Resolution": "2880 x 1800 Pixels",
         "Refresh Rate (Hz)": "90 Hz",
         "GPU manufacturer": "Intel"
     }

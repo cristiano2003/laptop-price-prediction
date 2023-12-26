@@ -5,6 +5,7 @@ sys.path.append(os.getcwd())  # NOQA
 import json
 import time
 import traceback
+import re
 
 from src.utils.selenium import ChromeDriver
 
@@ -188,78 +189,56 @@ class Fpt(BaseCrawler):
 
         self.log(f'Finish fetching ...')
 
-    # ----------------- Parse raw_htmls -----------------
-    def parse_specs(self, html_path: str):
-        with open(html_path, 'r', encoding='utf-8') as f:
-            soup = bs(f.read(), 'html.parser')
+    # Feature Engineering
 
-        # Get the product name
-        product_name = soup.find('h1').text.strip()
-
-        # Get the box price
-        box_price = soup.find('div', {'class': 'box-price'})
-
-        # A function to process the price
-        def process_price(price: str) -> int:
-            try:
-                price = price.replace('₫', '')
-                price = price.replace('*', '')
-                while '.' in price:
-                    price = price.replace('.', '')
-
-                price = price.strip()
-                return int(price)
-            except:
-                return price
-
-        # Get the price
-        try:
-            present_price: int = process_price(box_price.find('p', {'class': 'box-price-present'}).text.strip())
-        except:
-            present_price = None  # Do not have present price
-        try:
-            old_price: str = box_price.find('p', {'class': 'box-price-old'}).text.strip()
-            old_price: int = process_price(old_price)
-        except:
-            old_price = None  # Do not have old price
-
-        if old_price:
-            discount = round((old_price - present_price) / old_price, 2)
-        else:
-            discount = None
-
-        # Buid the raw specs
-        def build_raw_specs() -> str:
-            raw_specs = ''
-
-            parameter = soup.find('div', {'class': 'parameter'})
-            ul = parameter.find('ul')
-            lis = ul.find_all('li')
-
-            for li in lis:
-                feature = li.find('p', {'class': 'lileft'}).text.strip()
-                info = li.find('div', {'class': 'liright'}).text.strip()
-
-                info_list = list(map(lambda x: x.strip(), info.split('\n')))
-                info = ', '.join(info_list)
-
-                raw_specs += f'{feature}: {info}\n'
-
-            return raw_specs
-
-        raw_specs = build_raw_specs()
-
-        return {
-            'html_path': html_path,
-            'product_name': product_name,
-            'present_price': present_price,
-            'old_price': old_price,
-            'discount': discount,
-            'raw_specs': raw_specs
+    def _enhancing_features(self, product: dict) -> dict:
+        required_features = {
+            'Manufacturer': 1,
+            'CPU manufacturer': 2,
+            'CPU brand modifier': 3,
+            'CPU generation': 4,
+            'CPU Speed (GHz)': 5,
+            'RAM (GB)': 6,
+            'RAM Type': 7,
+            'Bus (MHz)': 8,
+            'Storage (GB)': 9,
+            'Screen Size (inch)': 10,
+            'Screen Resolution': 11,
+            'Refresh Rate (Hz)': 12,
+            'GPU manufacturer': 13,
+            'Weight (kg)': 14,
+            'Battery': 15,
+            'Price (VND)': 16
         }
+
+        # Add missing features
+        for feature in required_features.keys():
+            if feature not in product.keys():
+                product[feature] = None
+
+        # Sort the features by the order of required features
+        product = dict(sorted(product.items(), key=lambda item: required_features[item[0]]))
+
+        return product
+
+    def parse_specs(self):
+        return super().parse_specs()
+
+    def enhancer(self):
+        results = []
+
+        with open('data/fpt/parse_results.json', 'r', encoding='utf-8') as f:
+            products = json.load(f)
+
+        for product in products:
+            results.append(self._enhancing_features(product))
+
+        with open('data/fpt/all_columns_fpt.json', 'w', encoding='utf-8') as f:
+            json.dump(results, f, indent=4, ensure_ascii=False, sort_keys=False)
 
 
 if __name__ == '__main__':
     fpt = Fpt(headless=True)
     # fpt.get_all_product_links()
-    fpt.crawl_raw_htmls()
+    # fpt.crawl_raw_htmls()
+    fpt.enhancer()
