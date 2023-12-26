@@ -70,7 +70,8 @@ class LaptopPredictionModel:
                 param_grid=self.params,
                 cv=5,
                 verbose=1,
-                n_jobs=-1
+                n_jobs=-1,
+                refit=True,
             )
             self.grid.fit(X_train, y_train)
             y_pred_train = self.grid.predict(X_train)
