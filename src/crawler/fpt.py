@@ -4,6 +4,7 @@ sys.path.append(os.getcwd())  # NOQA
 
 import json
 import time
+import polars as pl
 import traceback
 import re
 
@@ -97,6 +98,9 @@ class Fpt(BaseCrawler):
 
     # ----------------- Fetch all raw_htmls -----------------
 
+    def parse_specs(self):
+        return super().parse_specs()
+
     def crawl_raw_htmls(self):
         """
             Crawl the raw HTML of all product pages
@@ -189,7 +193,7 @@ class Fpt(BaseCrawler):
 
         self.log(f'Finish fetching ...')
 
-    # Feature Engineering
+    # ----------------- Feature Engineering -----------------
 
     def _enhancing_features(self, product: dict) -> dict:
         required_features = {
@@ -221,9 +225,6 @@ class Fpt(BaseCrawler):
 
         return product
 
-    def parse_specs(self):
-        return super().parse_specs()
-
     def enhancer(self):
         results = []
 
@@ -236,9 +237,128 @@ class Fpt(BaseCrawler):
         with open('data/fpt/all_columns_fpt.json', 'w', encoding='utf-8') as f:
             json.dump(results, f, indent=4, ensure_ascii=False, sort_keys=False)
 
+    def regexing(self, product: dict) -> dict:
+        # CPU brand modifier (just number)
+        if product['CPU brand modifier']:
+            cpu_brand_modifier = re.findall(r'\d+', product['CPU brand modifier'])
+        else:
+            cpu_brand_modifier = None
+
+        # CPU generation (just number) 7320U -> 7; 11400H -> 11
+        if product['CPU generation']:
+            cpu_generation = re.findall(r'\d+', product['CPU generation'])
+
+            if cpu_generation[0] == '1':
+                if len(cpu_generation) == 5:
+                    cpu_generation = int(cpu_generation[:2])
+            else:
+                cpu_generation = int(cpu_generation[0])
+        else:
+            cpu_generation = None
+
+        # CPU speed (just number)
+        if product['CPU Speed (GHz)']:
+            cpu_speed = re.findall(r'\d+', product['CPU Speed (GHz)'])
+        else:
+            cpu_speed = None
+
+        # RAM (just number)
+        if product['RAM (GB)']:
+            ram = re.findall(r'\d+', product['RAM (GB)'])
+        else:
+            ram = None
+
+        # Bus (just number)
+        if product['Bus (MHz)']:
+            bus = re.findall(r'\d+', product['Bus (MHz)'])
+        else:
+            bus = None
+
+        # Storage (just number)
+        if product['Storage (GB)']:
+            storage = re.findall(r'\d+', product['Storage (GB)'])
+        else:
+            storage = None
+
+        # Screen size (just number)
+        if product['Screen Size (inch)']:
+            screen_size = re.findall(r'\d+', product['Screen Size (inch)'])
+        else:
+            screen_size = None
+
+        # Screen resolution
+        if product['Screen Resolution']:
+            screen_resolution = re.findall(r'\d+ x \d+', product['Screen Resolution'])
+        else:
+            screen_resolution = None
+
+        # Refresh rate (just number)
+        if product['Refresh Rate (Hz)']:
+            refresh_rate = re.findall(r'\d+', product['Refresh Rate (Hz)'])
+        else:
+            refresh_rate = None
+
+        # GPU manufacturer
+        if product['GPU manufacturer']:
+            gpu_manufacturer = re.findall(r'NVIDIA|AMD|Intel', product['GPU manufacturer'])
+        else:
+            gpu_manufacturer = None
+
+        # Weight (just number)
+        if product['Weight (kg)']:
+            weight = re.findall(r'\d+', product['Weight (kg)'])
+        else:
+            weight = None
+
+        # Battery (just number)
+        if product['Battery']:
+            if product['Battery'].find('Cell') != -1:
+                battery = product['Battery'].strip()
+            else:
+                battery = re.findall(r'\d+', product['Battery'])
+        else:
+            battery = None
+
+        # Price (just number)
+        price = product['Price (VND)'].replace('₫', '')
+        while price.find('.') != -1:
+            price = price.replace('.', '')
+
+        price = re.findall(r'\d+', price)
+
+        return {
+            "Manufacturer": product['Manufacturer'],
+            "CPU manufacturer": product['CPU manufacturer'],
+            "CPU brand modifier": int(cpu_brand_modifier[0]) if cpu_brand_modifier else None,
+            "CPU generation": int(cpu_generation[0]) if cpu_generation else None,
+            "CPU Speed (GHz)": float(cpu_speed[0]) if cpu_speed else None,
+            "RAM (GB)": int(ram[0]) if ram else None,
+            "RAM Type": product['RAM Type'],
+            "Bus (MHz)": int(bus[0]) if bus else None,
+            "Storage (GB)": int(storage[0]) if storage else None,
+            "Screen Size (inch)": float(screen_size[0]) if screen_size else None,
+            "Screen Resolution": screen_resolution[0] if screen_resolution else None,
+            "Refresh Rate (Hz)": int(refresh_rate[0]) if refresh_rate else None,
+            "GPU manufacturer": gpu_manufacturer[0] if gpu_manufacturer else 'Intel',
+            "Weight (kg)": float(weight[0]) if weight else None,
+            "Battery": int(battery[0]) if battery else None,
+            "Price (VND)": int(price[0]) if price else None
+        }
+
 
 if __name__ == '__main__':
     fpt = Fpt(headless=True)
     # fpt.get_all_product_links()
     # fpt.crawl_raw_htmls()
-    fpt.enhancer()
+    # fpt.enhancer()
+
+    with open('data/fpt/all_columns_fpt.json', 'r', encoding='utf-8') as f:
+        products = json.load(f)
+
+    output = []
+
+    for product in products:
+        output.append(fpt.regexing(product))
+
+    df = pl.DataFrame(output)
+    df.write_csv('data/fpt/fpt.csv')
