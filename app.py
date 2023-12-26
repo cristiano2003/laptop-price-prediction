@@ -52,7 +52,7 @@ def predict(brand, cpu, cpu_brand_type, cpu_hz, ram_type, ram, ram_bus,
     cate_data = ohe.transform(cate_data)
     cate_data = pd.DataFrame(cate_data, columns=ohe.get_feature_names_out())
     data = pd.concat([cate_data, nume_data], axis=1)
-    return round(float(pred_model.predict(np.array(data))[0]), 2) * 1000000
+    return round(float(pred_model.predict(np.array(data))[0]), 2)
 
 
 with gr.Blocks(theme=gr.themes.Soft(primary_hue="green")) as demo:
@@ -62,7 +62,7 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="green")) as demo:
     with gr.Row():
         model = gr.Dropdown(
             label="Model",
-            choices=["XGBRegressor", "RandomForestRegressor", "LinearRegression"],
+            choices=["XGBRegressor", "RandomForestRegressor", "GradientBoostingRegressor"],
             value="XGBRegressor",
         )
 
@@ -95,7 +95,7 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="green")) as demo:
     with gr.Row():
         ScreenResolution = gr.Dropdown(
             label="Screen Resolution",
-            choices=["1366x768", "1920x1080", "2560x1440"],
+            choices=["1366x768", "1920x1080", "1920x1200", "2560x1440", "2560x1600", "3840x2160"],
             value="1920x1080"
         )
         ScreenSize = gr.Radio(label="Screen Size (inch)", choices=[13.3, 14.0, 15.6, 17.3], value=15.6)
@@ -103,14 +103,14 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="green")) as demo:
 
     gr.Markdown("## **Other Features**")
     with gr.Row():
-        Battery = gr.Slider(label="Battery", minimum=40, maximum=90, value=70, step=1, interactive=True)
-        Weight = gr.Slider(label="Weight (kg)", minimum=1.0, maximum=3.0, step=0.1, value=1.4, interactive=True)
+        Battery = gr.Radio(label="Battery (Wh)", choices=[40, 50, 60, 70, 80])
+        Weight = gr.Radio(label="Weight (kg)", choices=[1.0, 1.5, 2.0, 2.5, 3.0])
         Storage = gr.Radio(label="Storage (GB)", choices=[256, 512, 1024, 2048], value=512)
     # Output Prediction
     gr.Markdown("## **Prediction**")
     with gr.Row():
 
-        output = gr.Number(label="Prediction (VND)", info="Click Submit to predict")
+        output = gr.Number(label="Prediction (Million VND)", info="Click Submit to predict")
     with gr.Row():
         submit_button = gr.Button("Submit")
         submit_button.click(fn=predict,
@@ -123,4 +123,4 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="green")) as demo:
         clear_button = gr.ClearButton(components=[output], value="Clear")
 
 if __name__ == "__main__":
-    demo.launch(max_threads=50, debug=True, prevent_thread_lock=True, show_error=True)
+    demo.launch(max_threads=50, debug=True, prevent_thread_lock=True, show_error=True, share=True)

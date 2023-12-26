@@ -1,6 +1,9 @@
-# 2023-laptop-price-prediction
-
-A Data Science Project at HUST
+---
+title: laptop-price-prediction
+app_file: app.py
+sdk: gradio
+sdk_version: 4.12.0
+---
 
 ## Install Dependencies
 
