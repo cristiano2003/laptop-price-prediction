@@ -230,14 +230,10 @@ class Anphat(BaseCrawler):
         raw_html_path = result[2]
 
     def parse_specs(self):
-        raw_htmls_dir = 'data/anphat/raw_htmls'
-
-        raw_htmls_path = [os.path.join(raw_htmls_dir, x) for x in os.listdir(raw_htmls_dir) if x.endswith('.html')]
+        pass
 
 
 if __name__ == "__main__":
     anphat = Anphat()
     # anphat.get_all_product()
-    anphat.crawl_raw_htmls()
-
-    anphat.conn.close()
+    # anphat.crawl_raw_htmls()
