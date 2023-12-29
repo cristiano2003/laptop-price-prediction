@@ -11,14 +11,6 @@ sdk_version: 4.12.0
 pip install -e .
 ```
 
-## Demo
-
-```bash
-python demo/app.py
-```
-
-![Alt text](img/image.png)
-
 ## Crawling Process
 
 All the code for crawling process are located in [src/crawler](src/crawler) directory. In details:
@@ -45,9 +37,36 @@ To run one of these functions, uncomment the corresponding line in each crawler 
 
 Show more details in [notebook/regex.ipynb](notebook/regex.ipynb)
 
+## EDA and Train Model
+
+Show EDA in [notebook/EDA.ipynb](notebook/EDA.ipynb)
+
+Show Model in [notebook/train.ipynb](notebook/train.ipynb)
+
+## Demo
+
+```bash
+python demo/app.py
+```
+
 ## Workload of each member
 
-- Đường Minh Quân (20210710):
-  -- Crawl data from An Phát, FPT Shop, Thegioididong (100%) in [src/crawler](src/crawler) directory
+- Duong Minh Quan (20210710):
 
-- Võ Đình Đạt (2021)
+  - Crawl data from An Phát, FPT Shop, Thegioididong in [src/crawler](src/crawler) directory (100%)
+
+- Nguyen Huu Nam (20210630):
+
+  - Preprocessing to extract feature from raw data(html) (100%)
+
+- Vo Dinh Dat (20214890):
+
+  - Perform EDA and Feature Engineering (50%)
+  - Build Model and Evaluation Metrics (50%)
+
+- Pham Quang Nguyen Hoang:
+
+  - Build Model and Evaluation Metrics (50%)
+
+- Nguyen Trung Truc:
+  - Perform EDA and Feature Engineering (50%)

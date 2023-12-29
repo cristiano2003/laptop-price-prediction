@@ -66,12 +66,8 @@ class LaptopPredictionModel:
         print(f"Training {self.model.__class__.__name__}")
         if self.grid_search:
             self.grid = GridSearchCV(
-                estimator=self.model,
-                param_grid=self.params,
-                cv=5,
-                verbose=1,
-                n_jobs=-1,
-                refit=True,
+                estimator=self.model,param_grid=self.params,cv=5,
+                verbose=1,n_jobs=-1,refit=True,
             )
             self.grid.fit(X_train, y_train)
             y_pred_train = self.grid.predict(X_train)
