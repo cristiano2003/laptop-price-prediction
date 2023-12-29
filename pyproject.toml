@@ -7,19 +7,17 @@ dependencies = [
     "scrapy",
     "beautifulsoup4",
     "requests",
-    "pymongo",
     "selenium",
     "webdriver-manager",
     "dev_tools_supporter",
     "scikit-learn",
+    "dev_tools_supporter",
     "pandas",
     "numpy",
     "matplotlib",
     "polars",
     "xgboost",
-    "gradio==4.12.0",
-    "undetected-chromedriver"
-]
+    "gradio==4.12.0"
 
 [project.optional-dependencies]
 dev = [
