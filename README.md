@@ -18,3 +18,36 @@ python demo/app.py
 ```
 
 ![Alt text](img/image.png)
+
+## Crawling Process
+
+All the code for crawling process are located in [src/crawler](src/crawler) directory. In details:
+
+- [base.py](src/crawler/base.py): Base class for all crawlers
+
+- [anphat.py](src/crawler/anphat.py): Crawler for [An Phát](https://www.anphatpc.com.vn/)
+
+- [tgdd.py](src/crawler/tgdd.py): Crawler for [Thegioididong](https://www.thegioididong.com/)
+
+- [fpt.py](src/crawler/fpt.py): Crawler for [FPT Shop](https://fptshop.com.vn/)
+
+In each crawler, we have 2 main functions:
+
+- `get_all_product_links()`: Get all product links from the website
+
+- `crawl_raw_htmls()`: Get product info from a product link. The htmls will be saved in `data/anphat/raw_htmls` or `data/tgdd/raw_htmls` or `data/fpt/raw_htmls` directory.
+
+- `parse_specs()`: Parse the raw htmls and save the data in form of json
+
+To run one of these functions, uncomment the corresponding line in each crawler file and run the file.
+
+## Regex for parsing specs
+
+Show more details in [notebook/regex.ipynb](notebook/regex.ipynb)
+
+## Workload of each member
+
+- Đường Minh Quân (20210710):
+  -- Crawl data from An Phát, FPT Shop, Thegioididong (100%) in [src/crawler](src/crawler) directory
+
+- Võ Đình Đạt (2021)
